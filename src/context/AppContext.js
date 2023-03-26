@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from 'react';
+import Currency from '../components/Currency';
 
 // 5. The reducer - this is used to update the state, based on the action
 export const AppReducer = (state, action) => {
@@ -120,3 +121,12 @@ export const AppProvider = (props) => {
         </AppContext.Provider>
     );
 };
+
+function App() {
+    return (
+      <div>
+        <Currency />
+      </div>
+    );
+  }
+  
