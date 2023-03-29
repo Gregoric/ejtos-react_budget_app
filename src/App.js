@@ -7,6 +7,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
+import Currency from './components/Currency';
 
 const App = () => {
     return (
@@ -41,5 +42,16 @@ const App = () => {
     );
 };
 
+function App() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>My App</h1>
+          <Currency />
+        </header>
+      </div>
+    );
+  }
+  
 
 export default App;
